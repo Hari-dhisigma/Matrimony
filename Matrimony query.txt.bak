@@ -1,0 +1,45 @@
+API for user validation
+
+SELECT txtUserName,txtPassword FROM tblUsers WHERE txtUserName ='"+uname+"' AND txtPassword ='"+password+"';"
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+API for user insert
+
+INSERT INTO tblUsers (txtUserName,txtPassword) VALUES ('"+uname+"','"+password+"');
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+API for user update
+
+UPDATE tblUsers 
+SET dDateOfBirth='1998-03-02',txtReligion='hindu',txtMotherTongue='malayalam',txtEmail='ajaykrr@gmail.com' 
+WHERE id=2;
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+API for fetching users
+
+SELECT id,txtUserName,txtAge,txtHeight,txtEducation,txtPlace FROM tblUsers;
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+API for fetching users  by id
+
+SELECT id, txtProfileName, txtAge,txtHeight,txtMotherTongue,txtReligion,txtPlace,txtEducation,txtJob FROM tblUsers WHERE id='"+id+"';
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+API for fetching profile
+
+SELECT id,txtUserName,txtPassword,dDateOfBirth,txtReligion,txtMotherTongue,txtEmail,txtPlace,txtEducation,txtJob,txtDescription,txtProfileName,txtAge,txtHeight,txtWeight,txtMaritalStatus FROM tblUsers WHERE id='"+id+"';
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+API profile update
+
+UPDATE tblUsers 
+SET txtPlace='muvattupuzha',txtEducation='btech',txtJob='software engineer',txtDescription='abcd',txtProfileName='ajay kr',txtAge='24',txtHeight='170',txtWeight='60',txtMaritalStatus='single';
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+INSERT INTO `matrimony`.`tblUsers` (`txtUserName`, `txtPasssword`, `dDateOfBirth`, `txtReligion`, `txtMotherTongue`, `txtEmail`, `txtPlace`, `txtEducation`, `txtJob`, `txtDescription`, `txtProfileName`, `txtAge`, `txtHeight`, `txtWeight`, `txtMaritalStatus`) VALUES ('arun', '123', '1998-07-24', 'hindu', 'malayalam', 'arun@gmail.com', 'kaloor', 'bcom', 'accountant', 'abc', 'arun vijayan', '24', '170', '63', 'single');
+
+
+ARN: arn:aws:lambda:us-west-2:046929580496:layer:matnode:1

@@ -1,0 +1,26 @@
+CREATE DATABAS
+
+CREATE DATABASE matrimony;
+
+-------------------------------------------------
+CREATE TABLE tblUsers
+
+CREATE TABLE tblUsers (
+    id INT NOT NULL AUTO_INCREMENT,
+    txtUserName VARCHAR(50) NOT NULL,
+    txtPasssword VARCHAR(50) NOT NULL,
+    dDateOfBirth DATE,
+    txtReligion VARCHAR(50) NOT NULL,
+    txtMotherTongue VARCHAR(50),
+    txtEmail VARCHAR(50),
+    txtPlace VARCHAR(50),
+	txtEducation VARCHAR(50),
+    txtJob VARCHAR(50),
+    txtDescription VARCHAR(50),
+    txtProfileName VARCHAR(50) NOT NULL,
+    txtAge VARCHAR(50),
+    txtHeight VARCHAR(50),
+	txtWeight VARCHAR(50),
+    txtMaritalStatus VARCHAR(50),
+    PRIMARY KEY (id)
+);

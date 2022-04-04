@@ -1,0 +1,198 @@
+API for user validation
+
+Request
+{
+  "txtUserName": "arun",
+  "txtPassword": "123"
+}
+
+Response
+{
+  "status": "success",
+  "value": [
+    {
+      "txtUserName": "arun",
+      "txtPassword": "123"
+    }
+  ]
+}		
+------------------------------------
+API for user insert
+
+Request
+{
+  "id":1
+  "txtUserName": "ajay",
+  "txtPassword": "123"
+}
+
+Response
+{
+    "status": "success",
+    "values": {
+        "fieldCount": 0,
+        "affectedRows": 1,
+        "insertId": 2,
+        "serverStatus": 2,
+        "warningCount": 2,
+        "message": "",
+        "protocol41": true,
+        "changedRows": 0
+    }
+}
+------------------------------------
+API for user update
+
+Request
+{
+  "id":25,
+  "dDateOfBirth": "1998-03-02",
+  "txtReligion": "hindu",
+  "txtMotherTongue": "malayalam",
+  "txtEmail": "ajaykrr@gmail.com"
+}
+
+
+Response
+{
+    "status": "success",
+    "values": {
+        "fieldCount": 0,
+        "affectedRows": 1,
+        "insertId": 0,
+        "serverStatus": 2,
+        "warningCount": 0,
+        "message": "(Rows matched: 1  Changed: 1  Warnings: 0",
+        "protocol41": true,
+        "changedRows": 1
+    }
+}
+
+------------------------------------
+API for fetching users
+
+Request
+{
+"task":"userfetch"
+}
+
+Response
+{
+    "status": "success",
+    "values": [
+        {
+            "id": 1,
+            "txtProfileName": "arun vijayan",
+            "txtAge": "24",
+            "txtHeight": "170",
+            "txtMotherTongue": "malayalam",
+            "txtReligion": "hindu",
+            "txtPlace": "kaloor",
+            "txtEducation": "bcom",
+            "txtJob": "accountant"
+        }
+    ]
+}
+
+------------------------------------
+Api for fetch user by id
+
+Request
+{
+"id":1
+}
+
+Response
+{
+    "status": "success",
+    "values": [
+        {
+            "id": 1,
+            "txtUserName": "arun",
+            "txtPassword": "123",
+            "dDateOfBirth": "1998-07-24T07:00:00.000Z",
+            "txtReligion": "hindu",
+            "txtMotherTongue": "malayalam",
+            "txtEmail": "arun@gmail.com",
+            "txtPlace": "kaloor",
+            "txtEducation": "bcom",
+            "txtJob": "accountant",
+            "txtDescription": "abc",
+            "txtProfileName": "arun vijayan",
+            "txtAge": "24",
+            "txtHeight": "170",
+            "txtWeight": "63",
+            "txtMaritalStatus": "single"
+        }
+    ]
+}
+
+------------------------------------
+Api for fetching profile
+
+Request
+{
+    "id":1
+}
+
+Response
+{
+    "status": "success",
+    "values": [
+        {
+            "id": 1,
+            "txtUserName": "arun",
+            "txtPassword": "123",
+            "dDateOfBirth": "1998-07-24T07:00:00.000Z",
+            "txtReligion": "hindu",
+            "txtMotherTongue": "malayalam",
+            "txtEmail": "arun@gmail.com",
+            "txtPlace": "kaloor",
+            "txtEducation": "bcom",
+            "txtJob": "accountant",
+            "txtDescription": "abc",
+            "txtProfileName": "arun vijayan",
+            "txtAge": "24",
+            "txtHeight": "170",
+            "txtWeight": "63",
+            "txtMaritalStatus": "single"
+        }
+    ]
+}
+------------------------------------
+Api profile update
+
+Request
+{
+"id":17,
+"txtPlace":"muvattupuzha",
+"txtEducation":"btech",
+"txtJob":"software engineer",
+"txtDescription":"abcd",
+"txtProfileName":"ajay kr",
+"txtAge":"24",
+"txtHeight":"170",
+"txtWeight":"60",
+"txtMaritalStatus":"single"
+}
+Response
+{
+    "status": "success",
+    "values": {
+        "fieldCount": 0,
+        "affectedRows": 5,
+        "insertId": 0,
+        "serverStatus": 34,
+        "warningCount": 0,
+        "message": "(Rows matched: 5  Changed: 0  Warnings: 0",
+        "protocol41": true,
+        "changedRows": 0
+    }
+}
+
+------------------------------------
+
+
+
+
+

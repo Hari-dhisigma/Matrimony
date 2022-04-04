@@ -1,0 +1,172 @@
+API for user validation
+
+Request
+{
+  "txtUserName": "arun",
+  "txtPassword": "123"
+}
+
+Response
+{
+  "status": "success",
+  "value": [
+    {
+      "txtUserName": "arun",
+      "txtPassword": "123"
+    }
+  ]
+}		
+------------------------------------
+API for user insert
+
+Request
+{
+  "id":1
+  "txtUserName": "ajay",
+  "txtPassword": "123"
+}
+
+Response
+{
+    "status": "success",
+    "values": {
+        "fieldCount": 0,
+        "affectedRows": 1,
+        "insertId": 2,
+        "serverStatus": 2,
+        "warningCount": 2,
+        "message": "",
+        "protocol41": true,
+        "changedRows": 0
+    }
+}
+------------------------------------
+API for user update
+
+Request
+{
+  "dDateOfBirth": "1998-03-02",
+  "txtReligion": "hindu",
+  "txtMotherTongue": "malayalam",
+  "txtEmail": "ajaykrr@gmail.com"
+}
+
+Response
+{
+  "status": "success"
+}
+
+------------------------------------
+API for fetching users
+
+Request
+{
+  "task": "userfetch"
+}
+
+Response
+{
+    "status": "success",
+    "values": [
+        {
+            "id": 1,
+            "txtUserName": "arun",
+            "txtAge": "24",
+            "txtHeight": "170",
+            "txtEducation": "bcom",
+            "txtPlace": "kaloor"
+        },
+        {
+            "id": 2,
+            "txtUserName": "ajay",
+            "txtAge": null,
+            "txtHeight": null,
+            "txtEducation": null,
+            "txtPlace": null
+        }
+    ]
+}
+
+------------------------------------
+API for user update
+
+Request
+{
+  "dDateOfBirth": "1998-03-02",
+  "txtReligion": "hindu",
+  "txtMotherTongue": "malayalam",
+  "txtEmail": "ajaykrr@gmail.com"
+}
+
+Response
+
+
+------------------------------------
+API for fetching users
+
+Request
+{
+"task":"userfetch"
+}
+
+Response
+
+
+------------------------------------
+Api for fetch user by id
+
+Request
+{
+"id":1
+}
+
+Response
+
+
+------------------------------------
+Api for fetching profile
+
+Request
+{
+"task":"profilefetch"
+}
+
+Response
+
+------------------------------------
+Api profile update
+
+Request
+{
+"id":17,
+"txtPlace":"muvattupuzha",
+"txtEducation":"btech",
+"txtJob":"software engineer",
+"txtDescription":"abcd",
+"txtProfileName":"ajay kr",
+"txtAge":"24",
+"txtHeight":"170",
+"txtWeight":"60",
+"txtMaritalStatus":"single"
+}
+Response
+{
+    "status": "success",
+    "values": {
+        "fieldCount": 0,
+        "affectedRows": 5,
+        "insertId": 0,
+        "serverStatus": 34,
+        "warningCount": 0,
+        "message": "(Rows matched: 5  Changed: 0  Warnings: 0",
+        "protocol41": true,
+        "changedRows": 0
+    }
+}
+
+------------------------------------
+
+
+
+
+
